@@ -23,3 +23,4 @@ def generate_alarm(request, cita_id):
         return JsonResponse(alarm.toJson(), safe=False)
     else:
         return JsonResponse({'message': 'No alarm created'}, status=200)
+    
