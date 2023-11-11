@@ -8,12 +8,10 @@ class PacienteForm(forms.ModelForm):
             'nombre',
             'id',
             'tipocita',
-            'dateTime',
         ]
 
         labels = {
             'nombre' : 'Nombre',
             'id' : 'ID',
             'tipocita' : 'Tipo Cita',
-            'dateTime' : 'Date Time',
         }
