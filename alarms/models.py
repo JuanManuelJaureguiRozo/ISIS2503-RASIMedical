@@ -5,7 +5,7 @@ from pacientes.models import Paciente
 class Alarm(models.Model):
     cita = models.ForeignKey(Cita, on_delete=models.CASCADE, default=None)
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE, default=None)
-    nombre = models.CharField(null=True, blank=True, default=None)
+    nombre = models.CharField(null=True, blank=True, default=None, max_length=100)
     limitExceeded = models.FloatField(null=True, blank=True, default=None)
     dateTime = models.DateTimeField(auto_now_add=True)
 
